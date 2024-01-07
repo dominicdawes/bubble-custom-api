@@ -1,3 +1,4 @@
+# PDF OCR Service
 # Import libraries
 import platform
 from tempfile import TemporaryDirectory
@@ -13,7 +14,7 @@ if platform.system() == "Windows":
     # https://github.com/UB-Mannheim/tesseract/wiki/Downloading-Tesseract-OCR-Engine
 
     pytesseract.pytesseract.tesseract_cmd = (
-        r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+        r"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
     )
 
     # Windows also needs poppler_exe
